@@ -1,0 +1,9 @@
+<%= form_with model: @user, url: '/top/create', method: :post, local: true do |f| %>
+  <p> 
+  <%= f.label :uid, 'ユーザーID' %>
+  <%= f.text_field :uid %>
+  <%= f.label :pass, 'パスワード' %>
+  <%= f.text_field :pass %>
+  <%= f.submit '登録' %>
+  </p>
+<% end %>
